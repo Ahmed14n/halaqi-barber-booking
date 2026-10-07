@@ -1,0 +1,12 @@
+{
+  "name": "halaqi-barber-booking",
+  "version": "1.0.0",
+  "private": true,
+  "description": "English-first barber booking app with Arabic brand name.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
