@@ -4,7 +4,7 @@ const path = require('node:path');
 const crypto = require('node:crypto');
 
 const PORT = Number(process.env.PORT || 4173);
-const DATA = path.join(__dirname, 'data.json');
+const DATA = path.join(process.env.DATA_DIR || __dirname, 'data.json');
 const seed = { users: [], services: [
   { id:'svc-cut',name:'Haircut',price:100,duration:60,active:true },
   { id:'svc-beard',name:'Beard Trim',price:80,duration:60,active:true },

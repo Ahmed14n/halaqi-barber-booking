@@ -14,6 +14,6 @@ With the server running, open the address in Chrome or Edge and choose **Install
 
 ## Data and sharing
 
-On this laptop, accounts, services, and appointments are stored in `data.json`. The server must stay running to use the app. A customer and barber on different devices need a public HTTPS address and a shared hosted database; these are not configured yet. `localhost` on the laptop does not open the laptop's app on a phone.
+Accounts, services, and appointments are stored in `data.json`. For a shared online deployment, the included `render.yaml` configures a Render web service with a persistent data disk. The server uses `DATA_DIR` so account and booking data survives redeploys. A paid Render service is required for a persistent disk; review the price shown by Render before creating the service. `localhost` on the laptop does not open the laptop's app on a phone.
 
 Hair & Beard appointments take 90 minutes. Other services take 60 minutes. The server rejects overlapping appointments.
